@@ -1,0 +1,82 @@
+@import './../../global/styles/variables.scss';
+
+$root: '.container';
+
+.loader {
+  text-align: center;
+  padding-top: $padding50;
+  font-family: $fontFamily;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.title {
+  text-align: center;
+  font-family: $fontFamily;
+}
+
+#{$root} {
+  border-radius: $border5;
+  background-color: $color-grey1;
+  padding: $padding20;
+  margin: $margin20;
+
+  .form-field {
+    margin: $margin10 $margin0;
+    
+    &__label {
+      margin-bottom: $margin5;
+
+      &-text {
+        font-size: $font-size18;
+        font-weight: bold;
+      }
+
+      .required {
+        color: $color-red;
+        padding-left: $padding5;
+      }
+    }
+
+    input {
+      margin-bottom: $margin5;
+      padding: $padding12 $padding20;
+    }
+
+    .textarea {
+      overflow: scroll;
+      max-height: $height350;
+      height: auto;
+      max-width: $width100p;
+      min-width: $width50p;
+    }
+
+    input[type=textinput], select, .textarea {
+      width: $width100p;
+      padding: $padding12 $padding20;
+      margin: $margin8 $margin0;
+      display: inline-block;
+      border: $border1 solid $color-grey2;
+      border-radius: $border4;
+      box-sizing: border-box;
+    }
+  }
+
+  input[type=submit] {
+    width: $width100p;
+    background-color: $color-green1;
+    color: $color-white;
+    padding: $padding14 $padding20;
+    margin: $margin8 $margin0;
+    border: none;
+    border-radius: $border4;
+    cursor: pointer;
+    font-size: $font-size15;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  input[type=submit]:hover {
+    background-color: $color-green2;
+  }
+}
