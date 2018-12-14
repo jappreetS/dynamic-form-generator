@@ -1,6 +1,10 @@
 # dynamic-form-genrator
 React Component to generate dynamic form with REST API integration
 
+## Technologies used:
+1. React
+2. HTML
+3. CSS
 
 ## Available Scripts
 
